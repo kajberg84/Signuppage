@@ -19,13 +19,15 @@
   --clr-light-gray: #bac1c8;
   --clr-light-gray-opa:rgb(186, 193, 200,0.3);
   --clr-icon-gray: #F2F2F1;
+  --clr-box-green: #70c99d;
+  --clr-password-green:#76C19A;
+  --clr-orange: #F26A44;
 
   /* from figma --clr-header-pink: #FAF6F5;  */
   /* But I wanted abit more color */
   --clr-header-pink: #fceeeb;
 
-  --clr-password-green:#76C19A;
-  --clr-orange: #F26A44;
+
 }
 
 html {
@@ -43,19 +45,33 @@ html, body {
 /* Main Containers */
 .grid-container {
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 30% 70%;
   height: 100vh;
 }
 
 .grid-box1 {
   background-color: var(--clr-header-pink);
+  position: relative;
 }
 
 .grid-box2 {
   background-color: var(--clr-off-white);
 }
 
+.link-style{
+  text-decoration: none;
+  color: var(--clr-link-blue)
+}
+
 /* grid-box1 style */
+
+.logo{
+  position: absolute;
+  width: 12rem;
+  top:24%;
+  left:20%;
+}
+
 .asgardname {
   padding:0.8rem  1.4rem;
   font-weight: bolder;
@@ -79,16 +95,11 @@ h1 {
   color: var(--clr-light-gray);
 }
 
-.light-blue {
-  color: var(--clr-link-blue)
-}
-
 .login-wrapper {
   font-size: 0.7rem;
 }
 
 .login {
-text-decoration: none;
 padding-left: 0.2rem;
 }
 
@@ -101,10 +112,10 @@ grid-gap:1rem;
 }
 
 .google-img{
-  width: 15px;
+  width: 1rem;
 }
 
-.signup-button {
+.global-button {
   height: 2rem;
   border-radius: 5px;
 }
@@ -129,7 +140,7 @@ grid-gap:1rem;
 }
 
 .signup-icons{
-  width: 15px;
+  width: 0.9rem;
 }
 
 .or-text {
@@ -154,8 +165,48 @@ form label {
 }
 
 /* form text */
-
+.strength-container {
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-gap:0.2rem;
+}
+.greenbox, .graybox {
+  margin: 0.7rem 0;
+  width: 100%;
+  height: 0.3rem;
+  border-radius: 2px;
+}
 .greenbox {
-  border-bottom:0.1rem;
-  border-color:red;
+  background-color: var(--clr-box-green);
+}
+.graybox {
+  background-color: var(--clr-light-gray-opa);
+}
+
+/* checkbox */
+.checkbox-wrapper {
+  display: grid;
+  grid-template-areas: "left right";
+}
+
+input[type=checkbox] {
+  grid-area:left;
+}
+
+.checkbox-text {
+  grid-area:right;
+  padding-left:0.2rem;
+  color:var(--clr-light-gray);
+}
+
+/* Createbutton */
+.create-btn-wrapper{
+    padding: 2rem 0;
+}
+
+.create-acc-button {
+  width: 100%;
+  background-color: var(--clr-orange);
+  color:var(--clr-off-white);
+  font-size: 0.7rem;
 }

@@ -12,6 +12,7 @@
 
   <div class="grid-container">
     <header class="grid-box1">
+      <img src="./images/flame-sign-in.svg" class="logo" alt="Logo"/>
       <div class="asgardname">
         Asgard
       </div>
@@ -23,22 +24,22 @@
 
         <div class="login-wrapper">
           <p class="text-gray">Already have an account? 
-            <a class="light-blue login"href="#">Log In</a>
+            <a class="light-blue login link-style"href="#">Log In</a>
           </p>
           <div>
 
-            <!-- buttons -->
+        <!-- Sign up buttons -->
         <div class="signup-button-wrapper"> 
-              <button class="signup-button s-btn-white">
+              <button class="global-button s-btn-white">
                 <span><img class="google-img"src="./images/google.svg" alt="google-logo"></span>
                 <span class="googletext"> Sign up with Google</span>
               </button>
 
-              <button class="signup-button s-btn-gray">
+              <button class="global-button s-btn-gray">
                 <img class="signup-icons" src="./images/facebook.png" alt="facebook-logo">
               </button>
 
-              <button class="signup-button s-btn-gray">
+              <button class="global-button s-btn-gray">
                 <img class="signup-icons" src="./images/apple.svg" alt="">
               </button>
         </div>
@@ -47,6 +48,7 @@
           <p> - OR - </p>
         </div>
 
+        <!-- form -->
         <Form>
           <label for="fullname">Full Name</label>
           <input class="ko" type="text" id="fullname" name="fullname" placeholder="Fullname here">
@@ -58,19 +60,23 @@
           <input  class="ko" type="password" id="password" name="password" placeholder="Password here">
           
           <p>Password strength</p>
-          <div class="password-strength">
-            <span class="greenbox"></span>
-            <span class="greenbox"></span>
-            <span class="greenbox"></span>
-            <span class="graybox"></span>
+          <div class="strength-container">
+            <div class="greenbox"></div>
+            <div class="greenbox"></div>
+            <div class="greenbox"></div>
+            <div class="graybox"></div>
           </div>
 
-          <input type="checkbox" id="check" name="check" value="check">
-          <label for="check"><span></span>
-            By creating account, you agree to accept our <a href="#">Privacy Policy Terms of Service</a> and <a href="#">Notification settings</a>
-          </label>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="checkbox" value="checked">            
+              <div class="checkbox-text">
+                By creating account, you agree to accept our <a class="link-style" href="#">Privacy Policy Terms of Service</a> and <a class="link-style" href="#">Notification settings</a>
+              </div>
+          </div>
           
-          <button>Create Account</button>
+          <div class="create-btn-wrapper">
+            <button class="create-acc-button global-button">Create Account</button>
+          </div>
           
         </Form>
     </main>
