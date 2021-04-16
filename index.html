@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Signup using grid and flex</title>
 </head>
@@ -21,6 +20,7 @@
     
       <main class="grid-box2">
         <h1>Sign up to Asgard</h1>
+
         <div class="login-wrapper">
           <p class="text-gray">Already have an account? 
             <a class="light-blue login"href="#">Log In</a>
@@ -28,45 +28,43 @@
           <div>
 
             <!-- buttons -->
-          <div class="signup-button-wrapper"> 
-
+        <div class="signup-button-wrapper"> 
               <button class="signup-button s-btn-white">
                 <span><img class="google-img"src="./images/google.svg" alt="google-logo"></span>
                 <span class="googletext"> Sign up with Google</span>
               </button>
 
+              <button class="signup-button s-btn-gray">
+                <img class="signup-icons" src="./images/facebook.png" alt="facebook-logo">
+              </button>
 
-            <button class="signup-button s-btn-gray">
-              <img class="signup-icons" src="./images/facebook.png" alt="facebook-logo">
-            </button>
-
-            <button class="signup-button s-btn-gray">
-              <img class="signup-icons" src="./images/apple.svg" alt="">
-            </button>
-
+              <button class="signup-button s-btn-gray">
+                <img class="signup-icons" src="./images/apple.svg" alt="">
+              </button>
         </div>
         
-        <p> - OR - </p>
-        
+        <div class="text-gray or-text">
+          <p> - OR - </p>
+        </div>
+
         <Form>
-          
           <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Fullname here">
+          <input class="ko" type="text" id="fullname" name="fullname" placeholder="Fullname here">
           
-          <label for="email">Email here</label>
-          <input type="email" id="email" name="email" placeholder="Email here">
+          <label for="email">Email address</label>
+          <input  class="ko" type="email" id="email" name="email" placeholder="Email here">
           
-          <label for="password">Password here</label>
-          <input type="password" id="password" name="password" placeholder="Password here">
+          <label for="password">Password</label>
+          <input  class="ko" type="password" id="password" name="password" placeholder="Password here">
           
-          <p>Password Strength</p>
+          <p>Password strength</p>
           <div class="password-strength">
-            <span class="greenbox">green</span>
-            <span class="greenbox">green</span>
-            <span class="greenbox">green</span>
-            <span class="graybox">empty</span>
+            <span class="greenbox"></span>
+            <span class="greenbox"></span>
+            <span class="greenbox"></span>
+            <span class="graybox"></span>
           </div>
-          
+
           <input type="checkbox" id="check" name="check" value="check">
           <label for="check"><span></span>
             By creating account, you agree to accept our <a href="#">Privacy Policy Terms of Service</a> and <a href="#">Notification settings</a>

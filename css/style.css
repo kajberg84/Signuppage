@@ -3,8 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-@import "button.css";
-
 /*----Mainstyle for webbpage----*/
 
 * {
@@ -19,6 +17,7 @@
   --clr-off-white: #f8f6f5;
   --clr-link-blue: #54a8e9;
   --clr-light-gray: #bac1c8;
+  --clr-light-gray-opa:rgb(186, 193, 200,0.3);
   --clr-icon-gray: #F2F2F1;
 
   /* from figma --clr-header-pink: #FAF6F5;  */
@@ -39,6 +38,7 @@ html, body {
   color:var(--clr-text);
   font-family: "Montserrat", sans-serif;
 }
+
 
 /* Main Containers */
 .grid-container {
@@ -84,7 +84,7 @@ h1 {
 }
 
 .login-wrapper {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .login {
@@ -110,8 +110,20 @@ grid-gap:1rem;
 }
 
 .s-btn-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
+  border:var(--clr-light-gray) solid 1px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--clr-text);
 }
+
+.google-img{
+  padding-right: 0.2rem;
+}
+
 .s-btn-gray{
   background-color: var(--clr-icon-gray);
 }
@@ -120,8 +132,30 @@ grid-gap:1rem;
   width: 15px;
 }
 
+.or-text {
+  text-align: center;
+  padding: 1.4rem 0;
+}
 
-/* form */
-form input {
+/* form  inputs*/
+form input.ko {
+  border: none;
+  outline: none;
   display: block;
+  background-color: var(--clr-off-white);
+  width: 100%;
+  padding: 0.6rem 0;
+  border-bottom: 2px solid var(--clr-light-gray-opa);
+  margin-bottom: 1.2rem;
+}
+form label {
+  font-size:0.6rem;
+  color: var(--clr-light-gray);
+}
+
+/* form text */
+
+.greenbox {
+  border-bottom:0.1rem;
+  border-color:red;
 }
