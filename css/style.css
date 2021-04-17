@@ -1,3 +1,8 @@
+/* Kaj Berg
+HTML5 och CSS3 med SEO
+Inlämning 2
+*/
+
 /* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
@@ -26,8 +31,6 @@
   /* from figma --clr-header-pink: #FAF6F5;  */
   /* But I wanted abit more color */
   --clr-header-pink: #fceeeb;
-
-
 }
 
 html {
@@ -65,8 +68,12 @@ html, body {
 
 /* grid-box1 style */
 
+.logotext{
+  display: none;
+}
+
 .logo{
-  position: absolute;
+  position: relative;
   width: 12rem;
   top:24%;
   left:20%;
@@ -113,6 +120,7 @@ grid-gap:1rem;
 
 .google-img{
   width: 1rem;
+  padding: 0;
 }
 
 .global-button {
@@ -121,6 +129,18 @@ grid-gap:1rem;
 }
 
 .s-btn-white {
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #fff;
+  border:var(--clr-light-gray) solid 1px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--clr-text);
+}
+
+/* .s-btn-white {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +149,7 @@ grid-gap:1rem;
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--clr-text);
-}
+} */
 
 .google-img{
   padding-right: 0.2rem;
