@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Signup using grid and flex</title>
 </head>
@@ -13,18 +14,23 @@
   <div class="grid-container">
     <header class="grid-box1">
       <div>
-        <div class="asgardname">
-          Asgard
+        <div class="asgard-container">
+          <div class="asgardname">
+            Asgard
+          </div>
+           <p class="logotext">A cloud based community for you to connect with fellow Asgardians</p>
         </div>
-        <img src="./images/flame-sign-in.svg" class="logo" alt="Robotic logo"/>
-        <p class="logotext">A cloud based community for you to connect with fellow Asgardians</p>
+
+        <img src="./images/flame-sign-in.svg" class="robologo" alt="Robotic logo"/>
       </div>
-
-
-
     </header>
     
       <main class="grid-box2">
+        <div class="languagechooser">
+          <p>English(USA)</p>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+
         <h1>Sign up to Asgard</h1>
 
         <div class="login-wrapper">
@@ -36,16 +42,24 @@
         <!-- Sign up buttons -->
         <div class="signup-button-wrapper"> 
               <button class="global-button s-btn-white">
-                <span><img class="google-img"src="./images/google.svg" alt="google-logo"></span>
+                <span>
+                  <a target="_blank" href="https://www.gmail.com/">
+                    <img class="google-img" src="./images/google.svg" alt="google-logo">
+                  </a>
+                </span>
                 <span class="googletext"> Sign up with Google</span>
               </button>
 
               <button class="global-button s-btn-gray">
-                <img class="signup-icons" src="./images/facebook.png" alt="facebook-logo">
+                <a target="_blank" href="https://www.facebook.com/">
+                  <img class="signup-icons" src="./images/facebook.png" alt="facebook-logo">
+                </a>
               </button>
 
               <button class="global-button s-btn-gray">
-                <img class="signup-icons" src="./images/apple.svg" alt="">
+                <a target="_blank" href="https://www.apple.com/">
+                  <img class="signup-icons" src="./images/apple.svg" alt="">
+                </a>
               </button>
         </div>
         
@@ -73,12 +87,12 @@
           </div>
 
           <div class="checkbox-wrapper">
-            <input type="checkbox" id="checkbox" value="checked">            
+            <input type="checkbox" id="checkbox" value="checked">
               <div class="checkbox-text">
                 By creating account, you agree to accept our <a class="link-style" href="#">Privacy Policy Terms of Service</a> and <a class="link-style" href="#">Notification settings</a>
               </div>
           </div>
-          
+
           <div class="create-btn-wrapper">
             <button class="create-acc-button global-button">Create Account</button>
           </div>
