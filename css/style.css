@@ -288,14 +288,37 @@ margin:0 auto;
   }
   }
 
+  @media (min-width: 1200px){
+
+    .robologo{
+      width: 25rem;
+      left:20%;
+    }
+  
+    h1 {
+      padding-top:10rem;
+    }
+    }
+
   @media (min-width: 1430px) {
     .robologo{
       width: 25rem;
+      left:25%;
     }
 
     .grid-box2{
       width: 30rem;
       margin:0 auto;
       }
+  }
 
+  @media (min-width: 1600px) {
+    .robologo{
+      width: 25rem;
+      left:30%;
+    }
+    .grid-box2{
+      width: 30rem;
+      margin:0 auto;
+      }
   }
