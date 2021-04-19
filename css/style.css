@@ -164,7 +164,7 @@ grid-gap:1rem;
 }
 
 /* form  inputs*/
-form input.ko {
+form input.form-input {
   border: none;
   outline: none;
   display: block;

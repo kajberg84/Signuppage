@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+  <meta name="description" content="Signup Asgard grid flex designskiss">
   <link rel="stylesheet" href="css/style.css">
   <title>Signup using grid and flex</title>
 </head>
@@ -25,7 +25,7 @@
       </div>
     </header>
     
-      <main class="grid-box2">
+    <main class="grid-box2">
         <div class="languagechooser">
           <p>English(USA)</p>
           <i class="bi bi-caret-down-fill"></i>
@@ -35,15 +35,15 @@
 
         <div class="login-wrapper">
           <p class="text-gray">Already have an account? 
-            <a class="light-blue login link-style"href="#">Log In</a>
+            <a class="light-blue login link-style" href="#">Log In</a>
           </p>
-          <div>
+        </div>
 
         <!-- Sign up buttons -->
         <div class="signup-button-wrapper"> 
               <button class="global-button s-btn-white">
                 <span>
-                  <a target="_blank" href="https://www.gmail.com/">
+                  <a target="_blank" rel="noreferrer" href="https://www.gmail.com/">
                     <img class="google-img" src="./images/google.svg" alt="google-logo">
                   </a>
                 </span>
@@ -51,13 +51,13 @@
               </button>
 
               <button class="global-button s-btn-gray">
-                <a target="_blank" href="https://www.facebook.com/">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
                   <img class="signup-icons" src="./images/facebook.png" alt="facebook-logo">
                 </a>
               </button>
 
               <button class="global-button s-btn-gray">
-                <a target="_blank" href="https://www.apple.com/">
+                <a target="_blank" rel="noreferrer" href="https://www.apple.com/">
                   <img class="signup-icons" src="./images/apple.svg" alt="">
                 </a>
               </button>
@@ -70,13 +70,13 @@
         <!-- form -->
         <Form>
           <label for="fullname">Full Name</label>
-          <input class="ko" type="text" id="fullname" name="fullname" placeholder="Fullname here">
+          <input class="form-input" type="text" id="fullname" name="fullname" placeholder="Fullname here">
           
           <label for="email">Email address</label>
-          <input  class="ko" type="email" id="email" name="email" placeholder="Email here">
+          <input  class="form-input" type="email" id="email" name="email" placeholder="Email here">
           
           <label for="password">Password</label>
-          <input  class="ko" type="password" id="password" name="password" placeholder="Password here">
+          <input  class="form-input" type="password" id="password" name="password" placeholder="Password here">
           
           <p>Password strength</p>
           <div class="strength-container">
@@ -87,7 +87,7 @@
           </div>
 
           <div class="checkbox-wrapper">
-            <input type="checkbox" id="checkbox" value="checked">
+            <input type="checkbox" id="checkbox" value="checked"  name="checkbox">
               <div class="checkbox-text">
                 By creating account, you agree to accept our <a class="link-style" href="#">Privacy Policy Terms of Service</a> and <a class="link-style" href="#">Notification settings</a>
               </div>
