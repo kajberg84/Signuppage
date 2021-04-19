@@ -159,13 +159,22 @@ grid-gap:1rem;
   color: var(--clr-text);
 }
 
-.google-img{
+.google-img {
   padding-left: 0.5rem;
 }
 
-.s-btn-gray{
+.s-btn-gray {
   background-color: var(--clr-icon-gray);
   width: 2rem;
+}
+
+.global-button {
+  cursor:pointer;
+}
+
+
+.create-acc-button:hover {
+  background-color: rgb(242, 106, 68, 0.5);
 }
 
 .signup-icons{
