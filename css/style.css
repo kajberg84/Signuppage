@@ -45,6 +45,21 @@ html, body {
   background-color: var(--clr-off-white);
 }
 
+/* Animate on h1 and .asgardname */
+@keyframes colorChange {
+  from {
+    color:var(--clr-text);
+  }
+  to {
+    color:var(--clr-orange);
+  }
+
+}
+
+h1, .asgardname {
+  animation:colorChange 4s infinite alternate;
+}
+
 
 /* Main Containers */
 .grid-container {
